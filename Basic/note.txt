@@ -1,0 +1,147 @@
+Javascript Tutorial
+-------------------------
+JavaScript is a lightweight, interpreted programming language. 
+It is designed for creating network-centric applications. It is complimentary to and integrated with Java. 
+JavaScript is very easy to implement because it is integrated with HTML.
+It is open and cross-platform.
+
+What is JavaScript?
+---------------------
+JavaScript was initially created to “make web pages alive”.
+
+The programs in this language are called scripts. 
+They can be written right in a web page’s HTML and run automatically as the page loads.
+
+Scripts are provided and executed as plain text. They don’t need special preparation or compilation to run.
+
+In this aspect, JavaScript is very different from another language called Java.
+
+Why is it called JavaScript?
+----------------------------
+When JavaScript was created, it initially had another name: “LiveScript”. 
+But Java was very popular at that time, so it was decided that positioning a new language as a 
+“younger brother” of Java would help.
+
+But as it evolved, JavaScript became a fully independent language with its own specification called 
+ECMAScript, and now it has no relation to Java at all.
+
+Today, JavaScript can execute not only in the browser, but also on the server, 
+or actually on any device that has a special program called the JavaScript engine.
+
+The browser has an embedded engine sometimes called a “JavaScript virtual machine”.
+
+Different engines have different “codenames”. For example:
+
+V8 – in Chrome and Opera.
+SpiderMonkey – in Firefox.
+…There are other codenames like “Chakra” for IE, “ChakraCore” for Microsoft Edge, “Nitro” and “SquirrelFish” for Safari, etc.
+The terms above are good to remember because they are used in developer articles on the internet. We’ll use them too. For instance, if “a feature X is supported by V8”, then it probably works in Chrome and Opera.
+
+How do engines work?
+------------------------
+Engines are complicated. But the basics are easy.
+
+The engine (embedded if it’s a browser) reads (“parses”) the script.
+Then it converts (“compiles”) the script to the machine language.
+And then the machine code runs, pretty fast.
+The engine applies optimizations at each step of the process. It even watches the compiled script as it runs,
+analyzes the data that flows through it, and further optimizes the machine code based on that knowledge.
+
+Browser uses parser to check and generated AST.
+
+What is an Abstract syntax tree (AST)?
+---------------------------------------
+Abstract syntax trees are data structures widely used in compilers, 
+due to their property of representing the structure of program code. 
+An AST is usually the result of the syntax analysis phase of a compiler.
+
+follow this for :https://astexplorer.net/
+https://blog.sessionstack.com/how-javascript-works-parsing-abstract-syntax-trees-asts-5-tips-on-how-to-minimize-parse-time-abfcf7e8a0c8
+
+Why Study JavaScript?
+----------------------
+JavaScript is one of the 3 languages all web developers must learn:
+
+   1. HTML to define the content of web pages
+
+   2. CSS to specify the layout of web pages
+
+   3. JavaScript to program the behavior of web pages
+
+What makes JavaScript unique?
+-----------------------------
+There are at least three great things about JavaScript:
+
+    Full integration with HTML/CSS.
+    Simple things are done simply.
+    Support by all major browsers and enabled by default.
+
+JavaScript is the only browser technology that combines these three things.
+
+That’s what makes JavaScript unique. That’s why it’s the most widespread tool for creating browser interfaces.
+
+That said, JavaScript also allows to create servers, mobile applications, etc.
+
+Uses of JavaScript
+--------------------
+JavaScript Can Change HTML Content
+eg. document.getElementById('demo').innerHTML = 'Hello JavaScript';
+
+JavaScript Can Change HTML Attribute Values
+
+JavaScript Can Change HTML Styles (CSS)
+
+JavaScript Can Hide HTML Elements
+
+JavaScript Can Show HTML Elements
+
+There are many useful Javascript frameworks and libraries available:
+--------------------------------------------------------------------
+
+Angular
+
+React
+
+jQuery
+
+Vue.js
+
+Ext.js
+
+Ember.js
+
+Meteor
+
+Mithril
+
+Node.js
+
+Polymer
+
+Aurelia
+
+Backbone.js
+
+Developer console
+-------------------
+Code is prone to errors. You will quite likely make errors… Oh, what am I talking about? You are absolutely going to make errors, at least if you’re a human, not a robot.
+
+But in the browser, users don’t see errors by default. So, if something goes wrong in the script, we won’t see what’s broken and can’t fix it.
+
+To see errors and get a lot of other useful information about scripts, “developer tools” have been embedded in browsers.
+
+Most developers lean towards Chrome or Firefox for development because those browsers have the best developer tools. Other browsers also provide developer tools, sometimes with special features, but are usually playing “catch-up” to Chrome or Firefox. So most developers have a “favorite” browser and switch to others if a problem is browser-specific.
+
+Developer tools are potent, they have many features. To start, we’ll learn how to open them, look at errors, and run JavaScript commands.
+
+Google Chrome
+------------------
+Open the page bug.html.
+
+There’s an error in the JavaScript code on it. It’s hidden from a regular visitor’s eyes, so let’s open developer tools to see it.
+
+Press F12 or, if you’re on Mac, then Cmd+Opt+J.
+
+The developer tools will open on the Console tab by default.
+
+It looks somewhat like this:
