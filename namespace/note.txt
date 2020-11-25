@@ -1,0 +1,32 @@
+JavaScript Namespaces
+--------------------
+Namespacing is the act of wrapping a set of entities, variables, functions, 
+objects under a single umbrella term.
+JavaScript does not support namespaces. But the namespaces are important as they help 
+reduce the number of identifiers for variables, objects, and functions that are added to 
+the global scope in your application. 
+JavaScript is a flexible language and there are ways to work around this limitation 
+and implement your own namespaces.
+
+So why do we need namespaces? In JavaScript, 
+the codes share a single global namespace which is simply a single global object that 
+holds all global variables and functions as properties. In the browser, this is the window object which 
+tends to pollute the global scope if there are too many objects.
+
+The simplest way to create a namespace is by creating an object literal:
+
+Example:
+let num = 5;
+var obj = {};
+var str = "Hello Edureka!";
+function sum(x, y){
+total = x + y;
+return total;
+}
+numr = sum(3,3);//6
+
+
+In the above example, the identifiers num, obj, str, and sum are properly 
+declared using the var and let keyword. But the function scoped variable total is missing a var
+and numr is a misspelling of num. Here, JavaScript adds both total and numr to the global name space, 
+which most likely is not what you want.
