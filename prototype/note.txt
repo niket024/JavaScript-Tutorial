@@ -1,0 +1,23 @@
+Advanced JavaScript Tutorial: Prototypes
+----------------------------------------
+In JavaScript, objects have a special hidden property known as Prototype which depicts either null or 
+references another object. Now, that object is called a prototype. In this advanced JavaScript Tutorial, 
+we will discuss two important features of prototype:
+
+Prototypal Inheritance
+Prototype methods, objects without __proto__
+ 
+
+Prototypal Inheritance
+---------------------
+In programming, we often want to take something and extend it. Suppose, 
+you have a user object with its properties and methods and you want to make admin and guest as 
+slightly modified variants of it. Here, you want to reuse what is there in the user, not copy its methods, 
+just build a new object on top of it.
+
+Prototypal inheritance is a language feature that helps in that.
+
+Prototype methods, objects without __proto__
+--------------------------------------------------
+In prototypal inheritance, we used __proto__ but this is an outdated method now. 
+In this advanced JavaScript Tutorial, we will have a look at the modern methods to set up a prototype:

@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script>
+        let pet = {
+            eats: true
+        };
+
+        // create a new object with pet as a prototype
+        let dog = Object.create(pet);
+
+        alert(dog.eats); // true
+
+        alert(Object.getPrototypeOf(dog) === pet); // true
+
+        Object.setPrototypeOf(dog, {}); // change the prototype of dog to {}
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
