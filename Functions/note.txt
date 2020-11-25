@@ -1,0 +1,123 @@
+Advanced Working with Functions
+-----------------------------
+A function is a block of organized, reusable code that is used to perform single, related action. 
+Some of the advanced working with functions include:
+
+Recursion
+Closure
+The “new Function”
+Arrow Functions
+Rest Parameters & Spread Operator
+Global Object
+Function Object
+SetTimeOut & SetInterval
+Function Binding
+
+Recursion
+---------
+Recursion is a programming pattern that helps in situations where a task can be naturally split 
+into several tasks of the same kind, but simpler. Or when a task can be simplified into an easy 
+action and a simpler variant of the same task.
+
+Closure
+--------
+JavaScript is a function-oriented language. You can create a function dynamically, 
+copy to another variable or pass as an argument to another function and call from a 
+totally different place later.
+
+A closure is a function that remembers its outer variables and can access them. In some languages, 
+it is not possible, or a function should be written in a special way to make it happen. But in JavaScript, 
+all functions are naturally closures.
+
+The “new Function”
+-----------------
+The “new function” syntax is another way to create a function. It’s rarely used, 
+but sometimes there’s no alternative.
+
+Arrow Functions
+---------------
+Arrow functions are anonymous and change the way this binds in functions. 
+It makes our code more concise and simplifies function scoping and this keyword.
+
+But arrow functions are not just a shorthand for writing small stuff. 
+They also have some very specific and useful features. JavaScript consists of situations 
+where you need to write a small function which is executed somewhere else, such as:
+
+arr.forEach(func) – func is executed by forEach for every array item.
+setTimeout(func) – func is executed by the built-in scheduler.
+
+And in such functions, we usually don’t want to leave the current context. 
+That’s where arrow functions come in handy.
+
+Rest Parameters & Spread Operator
+--------------------------------
+Many JavaScript built-in functions support an arbitrary number of arguments such as:
+
+Math.max(arg1, arg2, …, argN) – returns the greatest of the arguments.
+
+Object.assign(dest, src1, …, srcN) – copies properties from src1..N into dest
+
+Rest parameter is an improved way of handling function parameter, 
+allowing us to more easily handle various input as parameters in a function. 
+The rest parameter syntax allows us to represent an indefinite number of arguments as an array.
+
+Spread operator 
+-----------------
+It allows an iterable to expand in places where 0+ arguments are expected. 
+It is mostly used in variable array where there is more than 1 values are expected. 
+It allows us the privilege to obtain a list of parameters from an array.
+
+Global Object
+--------------
+The global object provides variables and functions that are available anywhere. 
+By default, those that are built into the language or the environment. 
+Recently, globalThis was added to the language, as a standardized name for a global object, 
+that should be supported across all environments.
+
+All properties of the global object can be accessed directly:
+
+Function Object
+----------------
+In JavaScript, functions are objects. The different properties include:
+
+name – the function name. Usually taken from the function definition, but if there’s none, 
+JavaScript tries to guess it from the context (e.g. an assignment).
+
+length – the number of arguments in the function definition. Rest parameters are not counted.
+
+If the function is declared as a Function Expression, and it carries the name, 
+then it is called a Named Function Expression. 
+The name can be used inside to reference itself, for recursive calls 
+
+SetTimeOut & SetInterval
+-----------------------
+If you want to execute a function at a certain time later, it is called as scheduling a call. 
+There are two methods for it:
+
+setTimeout allows us to run a function once after the interval of time.
+
+setInterval allows us to run a function repeatedly, starting after the interval of time, 
+then repeating continuously at that interval.
+
+These methods are not a part of the JavaScript specification. 
+But most environments have an internal scheduler and provide these methods.
+
+Function Binding
+------------------
+When passing object methods as callbacks, for instance to setTimeout, 
+there’s a known problem of “losing this”. 
+Functions provide a built-in method bind that allows fixing this.
+
+The result of func.bind(context) is a special function-like “exotic object”, 
+that is callable as function and transparently passes the call to func setting this=context.
+
+Callbacks
+-------------
+A callback is a function passed as an argument to another function.
+
+A callback is a function passed as an argument to another function
+
+This technique allows a function to call another function
+
+A callback function can run after another function has finished
+
