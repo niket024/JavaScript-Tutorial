@@ -1,0 +1,22 @@
+Error Handling
+-------------------
+No matter how good you are at programming, your scripts might consist of errors. 
+They may occur because of our mistakes, unexpected user input, 
+an erroneous server response, or any other reason.
+
+Usually, a script stops immediately in case of an error, printing it to console. 
+Now, there’s a syntax construct try..catch that allows catching errors and, instead of dying, 
+do something more reasonable.
+
+The Try..Catch Syntax
+The try..catch construct has two main blocks:
+
+Try
+Catch
+
+First, the code in try {…} is executed.
+
+If there are no errors, then catch(err) is ignored. The execution reaches the end of try and goes on, 
+skipping catch.
+
+If an error occurs, then try execution is stopped, and the control flows to the beginning of catch(err).
