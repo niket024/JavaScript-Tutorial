@@ -8,11 +8,16 @@
             firstName: "John"
         };
 
-        function func() {
+        function func1() {
             alert(this.firstName);
         }
 
+        function func() {
+            alert(this.firstName);
+        }
+        //The bind() method creates a new function
         let funcUser = func.bind(user);
+        func1();
         funcUser(); // John
     </script>
 

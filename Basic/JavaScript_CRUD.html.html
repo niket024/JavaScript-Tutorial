@@ -56,7 +56,7 @@
 
             // EXTRACT VALUE FOR TABLE HEADER.
             for (var i = 0; i < this.myBooks.length; i++) {
-                for (var key in this.myBooks[0]) {
+                for (var key in this.myBooks[i]) {
                     if (this.col.indexOf(key) === -1) {
                         this.col.push(key);
                     }

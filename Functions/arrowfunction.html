@@ -16,9 +16,18 @@
         hello = () => {
             document.getElementById("demo").innerHTML = "Hello World";
         }
+        hi = () => {
+            alert("I am from arrow function");
+        }
 
         document.getElementById("myBtn").addEventListener("click", hello);
-       
+        hi();
+
+        
+        var someValues = [1, 'abc', 3, 'sss'];
+        someValues.forEach((element) => {
+            console.log(element);
+        });
     </script>
 
 </body>

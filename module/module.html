@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script>
+        var MODULE = (function () {
+            var module = {};
+            var privateVariable = 7;
+
+            function privateMethod() {
+               console.log("Private method");
+            }
+
+            module.moduleProperty = 1;
+            module.moduleMethod = function () {
+               console.log("Module method");
+            };
+            return module;
+        }());
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

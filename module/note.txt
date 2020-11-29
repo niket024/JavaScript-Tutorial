@@ -1,0 +1,10 @@
+Modules in JavaScript
+----------------------
+A module is a self-contained piece of code that groups semantically-related variables and functions. 
+Modules are not built-in constructs in JavaScript. But the JavaScript Module Pattern provides a way to 
+create modules that have well-defined interfaces that are exposed to clients of the module.
+
+An important advantage of modules is that you can modify the internal functionality whenever necessary 
+without affecting the rest of your program. This promotes encapsulation and information hiding. 
+To define a module in JavaScript, 
+you take advantage of anonymous closures by creating an anonymous immediate function.
