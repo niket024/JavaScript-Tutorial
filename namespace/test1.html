@@ -10,18 +10,21 @@
                 console.log('stop')
             }
         }
+        function start() {
+            console.log("I am a different function");
+        }
         car.start();
         car.stop();
     </script>
 </head>
-<body>
-    <h3>In this way, start and stop are namespaced under car: car.start() and car.stop().
 
-        They are not polluting the global object.
-        
-        Why is this important? One good reason is that nothing can interfere with them.
-        
-        The way works also by assigning a variable to an object after it’s created:
-    </h3>
+<body>
+    <p>In this way, start and stop are namespaced under car: car.start() and car.stop().</p>
+
+    <p> They are not polluting the global object.</p>
+
+    <p>Why is this important? One good reason is that nothing can interfere with them.</p>
+   
 </body>
+
 </html>

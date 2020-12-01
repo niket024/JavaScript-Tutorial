@@ -10,7 +10,7 @@
         versions.</p>
 
     <button id="myBtn">Try it</button>
-    <p id="demo"></p>
+    <p id="demo">I will be changed once you click on btn</p>
 
     <script>
         hello = () => {
@@ -23,8 +23,15 @@
         document.getElementById("myBtn").addEventListener("click", hello);
         hi();
 
-        
+
         var someValues = [1, 'abc', 3, 'sss'];
+
+        for (let i = 0; i < someValues.length; i++) {
+            console.log(someValues[i]);
+        }
+
+        console.log("-----------------------")
+
         someValues.forEach((element) => {
             console.log(element);
         });
